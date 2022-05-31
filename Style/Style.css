@@ -1182,3 +1182,84 @@ cursor: pointer;
     justify-content: center;
 }
 }
+
+
+
+
+
+
+
+/*---------------------------------------*\
+                 responsive style
+\*--------------------------------------*/
+
+.note_click1{
+    color: snow;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    font-size: 1.4rem;
+    max-width: fit-content;
+
+}
+
+.note_click1 p{
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.note_click1 img{
+    height: 7vh;
+    background-color: var(--dark-purple);
+    border-radius: 50%;
+}
+
+
+
+.note_click2{
+    color: snow;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    font-size: 1.4rem;
+    max-width: fit-content;
+
+}
+
+.note_click2 p{
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.note_click2 img{
+    height: 7vh;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+}
+
+
+
+
+.note_click3{
+    color: snow;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    font-size: 1.4rem;
+    max-width: fit-content;
+
+}
+
+.note_click3 p{
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.note_click3 img{
+    height: 7vh;
+    background-color: var(--dark-orange-color);
+    border-radius: 50%;
+}
