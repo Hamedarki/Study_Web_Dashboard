@@ -23,6 +23,8 @@
 
 <body>
     <div class="container">
+        <!--------------------------------------header--------------------------------------------->
+        <!--------------------------------------header--------------------------------------------->
         <header class="header">
             <nav class="nav">
                 <div class="logo_header">
@@ -36,17 +38,19 @@
                             <button type="submit" class="search_button"><i class="fas fa-search"></i></button>
                         </form>
                         <i class="far fa-bell icon_search"></i>
-                        <p>Profile</p>
+                        <p onclick="profile();">Profile</p>
                     </div>
                 </div>
 
                 <div class="note_profile">
-                    <button><i class="fa fa-pen"></i></button>
-                    <button><i class="fa fa-adjust"></i></button>
+                    <button onclick="profile_undo();"><i class="fa fa-pen"></i></button>
+                    <button onclick="darkMode()" value="dark_mode" class="dark"><i class="fa fa-adjust"></i></button>
                 </div>
             </nav>
         </header>
         <main class="main">
+            <!---------------------------------------main---------------------------------------------->
+            <!---------------------------------------main---------------------------------------------->
             <div class="new_courses">
                 <div class="note_course">
                     <h3>New Course</h3>
@@ -159,6 +163,8 @@
 
                 </div>
             </div>
+            <!---------------------------------------my_course---------------------------------------------->
+            <!---------------------------------------my_course---------------------------------------------->
             <div class="my_course">
                 <div class="note_my_course">
                     <h3>My Course</h3>
@@ -259,6 +265,8 @@
                 </div>
             </div>
         </main>
+        <!---------------------------------------section_left---------------------------------------------->
+        <!---------------------------------------section_left---------------------------------------------->
         <div class="section_left">
             <div class="left">
                 <div class="note_section_left">
@@ -298,6 +306,9 @@
                 </div>
             </div>
         </div>
+
+        <!---------------------------------------section_right---------------------------------------------->
+        <!---------------------------------------section_right---------------------------------------------->
         <div class="section_right">
             <div class="profile">
                 <div class="information">
@@ -307,7 +318,26 @@
                         <p>Elementary</p>
                     </div>
                 </div>
-                <div class="calendar">
+                <div class="information_profile" id="information_profile">
+                    <h3>Biography:</h3>
+                    <p>was an American entrepreneur, inventor, business magnate, media proprietor, and investor. He was
+                        the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a
+                        member of The Walt Disney Company's board of directors following its acquisition of Pixar.</p>
+                    <h3>Skill:</h3>
+                    <ul>
+                        <li>Self-motivation.</li>
+                        <li>Inquisitiveness.</li>
+                        <li>Writing skills.</li>
+                        <li>Communication skills.</li>
+                        <li>Problem-solving capability.</li>
+                        <li>Mathematical skills.</li>
+                        <li>Learning concepts.</li>
+                        <li>applying them to other problems</li>
+                    </ul>
+                    <h3>information:</h3>
+                    <p>age:21 <br>nationality:American <br>language:English</p>
+                </div>
+                <div class="calendar" id="calendar">
                     <div id="v-cal">
                         <div class="vcal-header">
                             <button class="vcal-btn" data-calendar-toggle="previous">
@@ -338,6 +368,9 @@
                         <div class="vcal-body" data-calendar-area="month"></div>
                     </div>
                 </div>
+
+                <!---------------------------------------Homework---------------------------------------------->
+                <!---------------------------------------Homework---------------------------------------------->
                 <div class="skill_profile">
                     <h4>HomeWork progress</h4>
                     <div class="skill_box1">
@@ -353,7 +386,7 @@
                                 <p>Math : 18 </p>
                             </div>
                         </div>
-                        <i class="fas fa-angle-right" style="font-size:20px ;" onclick="click1();"></i>
+                        <i class="fas fa-angle-right btn_right" style="font-size:20px ;" onclick="click1();"></i>
                     </div>
                     <div class="skill_box2">
                         <div class="note_skill">
@@ -368,7 +401,7 @@
                                 <p>Computer : 12 </p>
                             </div>
                         </div>
-                        <i class="fas fa-angle-right" style="font-size:20px ;" onclick="click2();"></i>
+                        <i class="fas fa-angle-right btn_right" style="font-size:20px ;" onclick="click2();"></i>
                     </div>
                     <div class="skill_box3">
                         <div class="note_skill" id="skill_click3">
@@ -383,7 +416,7 @@
                             <p>Skill : 2 fingher</p>
                             <p>Math : 8 </p>
                         </div>
-                        <i class="fas fa-angle-right" style="font-size: 20px;" onclick="click3();"></i>
+                        <i class="fas fa-angle-right btn_right" style="font-size: 20px;" onclick="click3();"></i>
                     </div>
                 </div>
             </div>

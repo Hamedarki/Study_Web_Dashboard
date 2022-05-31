@@ -39,6 +39,23 @@
 
 
 
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-radius: 4rem;
+}
+
+
+
+::-webkit-scrollbar-track{
+    background-color: snow;
+}
+
+
 html{
     font-size: 62.5%;
     font-family: "Poppins" , Tahoma, Geneva, Verdana, sans-serif;
@@ -87,7 +104,42 @@ a {
   section{
     padding: 0;
 }
+
+
+.dark{
+    background-color: #0F0E0E;
+  }
+
+  .dark{
+      color: snow;
+  }
+
+  .dark .left p{
+      color: snow;
+  }
+
+  .dark .calendar{
+      color: black;
+  }
+  .dark .skill_profile p{
+      color: snow;
+  }
+
+  .dark .note_profile button{
+      color: black;
+  }
   
+.dark .my_course p{
+    color: snow;
+}
+  .dark .search_header i,form,p{
+      color: black;
+  }
+
+
+  .dark .box_1 , .box_2 , .box_3 h4{
+      color: black;
+  }
 /*---------------------------------------*\
                  header style
 \*--------------------------------------*/
@@ -152,7 +204,10 @@ a {
     border-radius: 1rem;
     cursor: pointer;
     margin: 0 .5rem;
+    color: black;
 }
+
+
 
 .note_profile button:hover{
     transition: all ease-in-out .3s;
@@ -1040,6 +1095,13 @@ cursor: pointer;
     transition: all ease-in-out .5s;
 }
 
+.btn_right{
+    color: purple;
+    padding: 2.5rem;
+    background-color: snow;
+    border-radius: 50%;
+}
+
   
 /*---------------------------------------*\
                  responsive style
@@ -1313,4 +1375,29 @@ cursor: pointer;
 
 #show_box3 img{
     height: 10vh;
+}
+
+#information_profile{
+    display: none;
+    flex-direction: column;
+    max-width: fit-content;
+    margin: .5rem 1.2rem;
+    text-align: center;
+}
+
+.information_profile >h3,p,ul{
+    font-size: 1.5rem;
+    font-weight: 700;
+   
+}
+
+.information_profile h3{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: .3rem;
+    color: purple;
+}
+
+.information_profile>p,ul{
+    margin-bottom: 2rem;
 }

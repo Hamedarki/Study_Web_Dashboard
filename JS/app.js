@@ -22,6 +22,20 @@ function show_box3(){
     lastskill.style.display = "none" ;
 }
 
+function profile(){
+    let newskill = document.getElementById("information_profile")
+    let lastskill =document.getElementById("calendar")
+    newskill.style.display = "flex" ;
+    lastskill.style.display = "none" ;
+}
+
+function profile_undo(){
+    let newskill = document.getElementById("calendar")
+    let lastskill =document.getElementById("information_profile")
+    newskill.style.display = "flex" ;
+    lastskill.style.display = "none" ;
+}
+
 function click1(){
     let newskill = document.getElementById("click1")
     let lastskill =document.getElementById("skill_click1")
@@ -43,4 +57,10 @@ function click3(){
     let lastskill =document.getElementById("skill_click3")
     newskill.style.display = "flex" ;
     lastskill.style.display = "none" ;
+}
+
+//This function Display Dark mode
+
+function darkMode(){
+    document.body.classList.toggle("dark");
 }
