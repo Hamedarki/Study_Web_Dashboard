@@ -250,6 +250,8 @@ cursor: pointer;
     margin: 1rem;
     color:grey;
     width: 10rem;
+    margin-right: 5rem;
+
 
 }
 
@@ -1190,7 +1192,7 @@ cursor: pointer;
 
 
 /*---------------------------------------*\
-                 responsive style
+                 JS style
 \*--------------------------------------*/
 
 .note_click1{
@@ -1262,4 +1264,53 @@ cursor: pointer;
     height: 7vh;
     background-color: var(--dark-orange-color);
     border-radius: 50%;
+}
+
+#show_box1{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+#show_box1 img{
+    height: 10vh;
+}
+
+#show_box2{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+#show_box2 img{
+    height: 10vh;
+}
+
+#show_box3{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+
+#show_box3 img{
+    height: 10vh;
 }
