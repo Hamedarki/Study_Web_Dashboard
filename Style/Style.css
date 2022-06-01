@@ -140,6 +140,10 @@ a {
   .dark .box_1 , .box_2 , .box_3 h4{
       color: black;
   }
+
+  .dark .information_profile p{
+    color: snow;
+}
 /*---------------------------------------*\
                  header style
 \*--------------------------------------*/
@@ -1113,41 +1117,61 @@ cursor: pointer;
 .container{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
+.header{
+    margin-bottom: 5rem;
+}
 .nav{
-    display: flex;
-    flex-direction: column;
-}
-
-.logo_header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin: auto;
-}
-
-.note_profile{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin:1rem auto;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: snow;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom-right-radius: 1.1rem;
+    border-bottom-left-radius: 1.1rem;
+    opacity: 100;
 }
 
-.logo_header h3{
-    margin-right: 4rem;
+
+.search_header p{
+    padding: 1rem;
+    margin-right:2.2rem ;
+    font-size: 1.2rem;
 }
 
 .search_header{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 9rem;
+    margin-left: 1rem;
 }
 
-.note_profile i{
-    margin:  0 auto;
+.logo_header{
+    display: none;
+    position: absolute;
+}
+
+.note_profile{
+    margin-left: 1rem;
+}
+
+.note_profile button{
+    margin-right: 1rem;
+}
+
+.new_courses{
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2rem auto;
+    text-align: center;
 }
 
 
@@ -1157,15 +1181,20 @@ cursor: pointer;
 }
 
 .box_1{
-    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .box_2{
-    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
 }
 
 .box_3{
-    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
 }
 
 .images img{
@@ -1179,71 +1208,121 @@ cursor: pointer;
 }
 .my_course{
     font-size: 1rem;
+    margin: auto;
+    text-align: center;
 }
+
+.note_my_course{
+    text-align: center;
+    margin: auto;
+}
+
 
 .profile{
     margin: auto;
 }
 
-
 .data_rate p{
     margin-top: 2rem;
 }
 .data_my_course{
-    margin-left: 4rem;
+    max-width: fit-content;
+    justify-content: space-between;
 }
 
-
+/* 
 .note_section_left{
     text-align: justify;
     margin-left: 14rem;
-}
+} */
 
-.note_section_left div>p{
-    text-align: center;
-}
-
-.section_left_image{
+/* .section_left_image{
     margin-left: 14rem;
-}
+} */
 
 .section_left_image img{
     height: 100%;
 }
 
-
 .image_profile img{
     height: 15%;
 }
+
+.left{
+    margin: 1.5rem auto;
+}
+
+.note_section_left{
+    margin: auto;
+    text-align: start;
+}
+
+.section_right{
+    margin: auto;
+}
+
+.image{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
 #v-cal{
     align-items: center;
     margin: auto;
 }
 
+.calendar{
+    width: 30rem;
+    margin: auto;
+}
+
+.skill_profile{
+    margin: auto;
+    font-size: 1rem;
+}
+
+.information_profile p{
+    color: snow;
+}
+
+
+
 .skill_profile h4{
     text-align: center;
     font-size: 2.5rem;
-    margin:2.5rem auto;
+    margin:2.5rem 0;
 }
 .skill_profile .skill_box1{
     text-align: center;
     margin:1rem auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: fit-content;
+    width: 25rem;
+    height: 8vh;
+
 }
 
 .skill_profile .skill_box2{
     text-align: center;
     margin:1rem auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: fit-content;
+    width: 25rem;
+    height: 8vh;
+
 }
 
 .skill_profile .skill_box3{
     text-align: center;
     margin:1rem auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: fit-content;
+    width: 25rem;
+    height: 8vh;
+
 }
 }
 
